@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="companytask.css" rel="stylesheet"/>
+    <title>CompanyTask</title>
+</head>
+<style>
+    .backside{
+    height: 400%;width: 100%;
+    background-color:  lavender;
+    background-position: center;
+    background-size: cover;
+    position: absolute;  
+    font-family:  sans-serif; 
+    padding: 0;  
+    margin: 0; 
+}
+.backside1{
+    height: 400%;width: 100%;
+    background-color:lightblue;
+    background-position: center;
+    background-size: cover;
+    position: absolute;  
+    font-family:  sans-serif; 
+    padding: 0;  
+    margin: 0; 
+}
+.insidebox{
+    height: 600px; width: 66.5%; 
+    background-color: white;
+    background-position: center;
+    position: relative;
+    border-radius: 10px; 
+    margin-top: 1%; 
+    margin-left: 4%;
+    font-family: sans-serif;
+}
+.image{
+    width: 99.99%;
+    height: 280px;
+    text-align:justify;
+    border-radius: 10px;
+    background-image: url(https://i.pinimg.com/originals/76/e9/23/76e9238fca30a0fc41b6f5fac75b516b.jpg);
+    background-position: center;
+    background-size: cover;
+} 
+.mounika{
+    width: 99.99%;
+    height: 280px;
+    text-align:justify;
+    border-radius: 10px;
+    background-image: url(https://marketplace.canva.com/EAFHlPbzjjU/1/0/1600w/canva-blue-geometric-technology-linkedin-banner-eKcdAHuoluc.jpg);
+    background-position: center;
+    background-size: cover;
+}      
+.pic{
+    height: 160px;
+     width: 160px; 
+    border-radius: 90px;
+    margin-top:18% ;
+    margin-left: 3% ;
+}
+.matter{
+    margin: 1%;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+.heading{
+    font-family:serif;
+    font-size: 30px; 
+}
+.para{
+    text-align: justify;
+    
+     color:darkslategrey;
+     font-size: 18px;
+}
+.style{
+    font-size: 20px; font-style: italic;
+}
+.icon{
+    height: 20px; width: 20px; margin-top: 5px; color: blue;}    
+.connection{
+    color: blue;
+    font-weight: 600;
+}
+.connection:hover{
+    text-decoration: underline;
+}
+.open{
+    width: 90px;
+    border-radius: 30px;
+    background-color:dodgerblue;
+    color: white;
+    font-weight: 600;
+    outline: 0;
+    border: 0;
+    padding: 5px;
+}
+.open:hover{
+    background-color: blue;
+}
+.profile{
+    width: 170px;
+    border-radius: 30px;
+    padding: 5px;
+    color: dodgerblue;
+    border-color: dodgerblue;
+    font-weight: 600;
+    border-width: 1px;
+}
+.profile:hover{
+    color: blue;
+    border-color: blue;
+    border-width: 2px;
+}
+.more{
+    width: 80px;
+    padding: 5px;
+    border-radius: 30px;
+    font-weight: 600;
+    color: dimgrey;
+    border-color: dimgrey;
+    border-width: 1px;
+}
+.more:hover{
+    color: darkslategray;
+    border-color: black;
+    border-width: 2px;
+}
+.small-box{
+    float: right;
+    height: 200px;
+    width: 22%;
+    background-color:white;
+    position: relative;
+    border-radius: 8px; 
+    margin-top: 1%;
+    margin-right: 5%;
+    
+   
+}
+.small-inside{
+    padding-left: 8px;
+}   
+.small-box1{
+    height: 560px;
+    width: 100%;
+    background-color:white;
+    float: right;
+    border-radius: 8px;
+    font-family: sans-serif;
+    margin-top: 13%;
+}
+.small-box2{
+    float: right;
+    height: 200px;
+    width: 100%;
+    background-image: url(https://media.licdn.com/media/AAYQAgTPAAgAAQAAAAAAADVuOvKzTF-3RD6j-qFPqhubBQ.png);
+    position: relative;
+    border-radius: 8px; 
+    margin-top: 1%;
+    
+    
+   
+}
+.small-img{
+    height:70px;
+    width:70px; 
+    border-radius: 50px;
+    margin-top: 5%;
+    margin-left: 3%;
+} 
+.innerbox1{
+    float: left; 
+    height: 120px;
+    width: 100%;
+    background-color:transparent;
+    border-radius: 10px;
+    
+} 
+.connect{
+    border-radius: 20px;
+    width: 88px;
+    padding: 5px;
+    color: darkslategrey;
+    border-width: 1px;
+    font-size: 14px; 
+    font-weight: 700;
+} 
+.innerbox2{
+    height: 130px;
+    width: 65%;
+    float: right;
+    margin-left: 2%;
+}
+.name{
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 8%;
+    text-decoration: none;
+    color: black;
+} 
+.showmore{
+    background: white;
+    width: 100%;
+    padding: 7px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right:0 ;
+    border-width: 1px;
+    color: black;
+    font-weight: 600;
+    overflow: hidden;
+    position: relative;
+}
+.showmorebox{
+    height: 95vh;
+    width: 100%;
+    background-color: white;
+    float: right;
+    border-radius: 8px;
+    margin-top: 2%;
+} 
+
+.small-img1{
+    height:70px;
+    width:70px;
+    border-radius: 50px;
+    margin-left: 10px;
+}  
+.box1{
+    height: 120px;
+    width: 65%;
+    background-color: white;
+    border-radius: 10px ;
+    padding: 10px;
+    margin-top: 0.5%;
+    margin-left: 4%;
+}
+.boxe{
+    height: 320px;
+    width: 65%;
+     background-color: white;
+    border-radius: 10px ; 
+    padding: 10px;
+    margin-top: 0.5%; 
+    margin-left: 4%;
+    font-family:  sans-serif;
+}
+.boxe button{
+    width: 100%;
+    border: 0;
+    background-color:transparent;
+    color: blue;
+    font-weight: 600;
+} 
+.boxe button a{
+    font-weight: 700;
+    text-decoration: none;
+    color: blue;
+}
+
+.divimg{
+    height: 90px;
+     width: 80px;
+     float: left;
+     margin: 10px;
+}
+.form-control{
+    height: 500px; width: 66%;
+    background-color: white;
+    position: relative;
+    margin: 2% ;
+    padding: 5px ;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 4%;
+}
+.form-control h3{
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 25px;
+}
+.button-box{
+    width: 280px;
+    position: relative;
+    box-shadow: 0 0 20px 9px lightgreen;
+    border-radius: 30px;
+    margin: 8px auto;
+}
+.button-control{
+    border: 0;
+    outline: none;
+    padding: 10px 30px;
+    position: relative;
+    background: transparent;
+}
+#btn{
+    position: absolute;
+    width:150px ;
+    height: 100%; 
+    background: linear-gradient(to right,orange,yellow);
+    border-radius: 30px;
+}
+.inside-form{
+    width: 100%;
+    border-radius: 10px ;      
+}
+.input-img{
+    height: 100px;
+    width: 100px;
+    float: left;
+    background: transparent;
+    margin:10px;
+}.inside-form h3{
+    margin: 10px ;
+}.inside-form p{
+    color: darkblue;
+    font-weight: bold;
+}  
+.followbtn{
+    width: 100px;
+    padding: 5px 10px;
+    margin: 5px auto;
+    border-radius: 20px;
+    border:0;
+    outline: none;
+    background-color: rgb(127, 205, 231);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+} 
+.float-form{
+    height: 150px;
+    width: 250px;
+    background-color:transparent;
+    border-radius: 5px; 
+    float: left;
+    margin: 2px;
+} 
+
+.container{
+    height: 200px; width: 295px; background-color: white; border-radius: 5px; border: 3px dotted blue;
+    float: left; margin-left: 10px; text-align: center;
+}
+.box1 span{
+    color: blue;cursor: pointer;
+}
+
+.aboutcontainer{
+    height: 100vh;width: 100%;background-image: linear-gradient(red,pink,blue);
+    background-position: center;
+}
+.boxcontainer{
+    height: 110px; width: 400px;
+    background-color:blue;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%) scale(0.1);
+    padding: 0 30px 30px;
+    background-size: 100% 100%;
+    border-radius: 30px;
+    visibility: hidden;
+    transition: transform 0.6s left 0.6s;
+}
+.messageopen{
+    left: 50%;
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(2); 
+    margin-top: 40%;
+}
+.boxcontainer p{
+    font-size: 12px;
+    color: white;
+    font-family: 'Lucida Sans Unicode';
+    font-style: italic;
+     cursor: pointer;
+}
+.boxcontainer p:hover{
+    color: black; 
+    text-shadow: 2px 2px 8px red;
+    font-weight: bold;
+}
+.boxcontainer div{
+    float: right;
+    margin-top: 3%;
+    color: white;
+}
+
+        
+.aboxcontainer p{
+    font-size: 13px;color:blueviolet;margin-left: 10%;
+    font-family: 'Lucida Sans Unicode';font-style: italic; cursor: pointer;
+}
+.aboxcontainer p:hover{
+    background-color: white;
+}
+.aboxcontainer div{
+    float: right;color:black;margin-top: 3%;
+}
+.divimg{
+    height: 80px; width: 80px;float: left;margin-right: 20px;
+    margin-top: 2%;
+}
+.aboxcontainer a{
+    color: blue; font-size: 18px;font-weight: 600;
+    padding-top: 20%;
+}
+.design{
+    margin: 2px; font-family:   sans-serif;color:darkslategrey;font-weight: 900;
+    text-decoration: none;
+}
+
+
+.container{
+    height: 200px; width: 295px; background-color: white; border-radius: 5px; border: 3px dotted blue;
+    float: left; margin-left: 10px; text-align: center;
+}
+.box1 span{
+    color: blue;cursor: pointer;
+}
+.container1{
+    background-color: transparent;
+    height: 90vh; width: 100%;
+    background-position: center;
+}
+.inside1{
+    height: 400px; width: 510px;
+    background-color:lightblue;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.5);
+    padding: 10px 30px 30px;
+    border-radius: 20px;
+    visibility: hidden;
+    transition: trasform 0.4s top 0.4s;
+    font-family: serif;
+    font-weight: bold;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    margin-top: 20%;
+    transform: translate(-50%,-50%) scale(1);
+}
+h3{
+    font-size: 25px; font-family: sans-serif;font-weight: 600;margin-top: 3%;
+}
+.contact{
+    height: 120px;width: 500px; background-color: antiquewhite;padding: 5px;border-radius: 10px;
+}
+.head{
+    font-size: 18px; margin-top: 1%;text-decoration: underline;
+}
+.icon{color: blue; height: 25px;width: 25px; margin-top: 10px;
+}
+.pover{
+    margin-left: 5%;
+    margin-top: 4%;
+    margin: 5px;
+    font-weight: 600;
+}
+.pover:hover{
+    color: blue; 
+    
+}
+.showitems{
+    visibility: visible;
+}
+.openbox{
+    height: 100px;
+    width:100px ;
+    background-color: lavender;
+    font-weight: bold;
+    padding: 8px;
+    top: 0;
+    left: 50%;
+    visibility: hidden;
+    transform: translate(-50%,-50%) scale(0.1);
+    transition: transform 0.6s left 0.6s;
+    border-radius: 8px;
+}
+
+.openbox p{
+    font-size: 8px;
+}
+.openbox p:hover{
+    text-decoration: underline;
+}
+.openblock{
+    top: 50%;
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(2); 
+    margin-top: 4.5%;
+    margin-left: 13%;
+}
+.People{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding-left: 15px;
+}
+.People1{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    padding-left: 15px;
+}
+.openbox1{
+    height: 150px;
+    width:150px ;
+    background-color: lavender;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 10px;
+    top: 50%;
+    left: 0;
+    visibility: hidden;
+    transform: translate(-50%,-50%) scale(0.1);
+    transition: transform 0.5s left 0.5s;
+}
+.openblock1{
+left: 50%;
+visibility: visible;
+transform: translate(-50%,-50%) scale(1.5); 
+margin-left: 30%;
+
+}
+</style>
+<body>
+    <div style="float: left;">  
+        <div class="backside">
+            <div class="insidebox">
+                <div class="image">
+                    <img src="hari.jpeg" class="pic"></div>
+                     <div class="matter">   
+                        <h1 class="heading">HARIKRISHNA VELTHAPU</h1>
+                        <p class="para">Software Development</p>
+                        <p style="color: darkgrey;">Talks about #cloud, #awscloud, #innovation, #digitaltransfomation, and #enterpriseitstrategy</p>
+                        <p style="color: dimgrey;">Hyderbad,Telangana,India.
+                        <a href="#" style="text-decoration: none; font-size: 15px; " onclick="opencontact()">Contact info</a></p>
+                        <p class="connection">5 connections</p>
+                        <button class="open" onclick="openopen()">Open to</button>
+                        
+                        <button class="profile">Add proflie section</button>
+                        <button class="more" onclick="openmore()">More</button>
+                    </div>
+                </div >
+                
+                
+        <div class="box1">
+            <h3>About</h3>
+            <p>In course of my interesting professional journey till now, I have attempted to Observe, Learn and Absorb from all possible sources
+            <span onclick="showMessage()">To Know more....</span></p>
+        </div>
+        <div class="box1">
+            <h3>Skills</h3>
+            <p style="color: darkslateblue;font-weight: 600;">TALENT ACQUISITION</p>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Html</option>
+                <option value="1">css</option>
+                <option value="2">JavaScript</option>
+                <option value="3">Python</option>
+                <option value="4">Core Java</option>
+                <option value="5">Management</option>
+                <option value="6">Business</option>
+                </select>
+        </div>
+            <div class="boxe">
+                <h3>Education</h3>
+            <img src="data:image/png;base64,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" class="divimg"> 
+            <a > WELINGKAR INSTITUTE OF MANAGEMENT</a>
+            <p>Master of Business Administration</p>
+            <p style="color: black;">20XX-20XX</p>
+                   
+            <hr> 
+            <img src="https://i.pinimg.com/736x/9d/31/fe/9d31fecae5ca377b7aa993a91fcd8bf6.jpg" class="divimg"> 
+            <a > Christ University,Bangalore</a>
+            <p>Bachelor of Degree</p>
+            <p style="color: black;">20XX-20XX</p>
+            <button><a href="part1.html">Show more</a></button>
+        </div> 
+   
+<div class="hero">
+            <div class="form-control">
+                <h3>Interest</h3>
+                <div class="button-box">
+                <div id="btn"></div>
+                <button type="text" class="button-control" onclick="toshowcom()"> Companies</button>
+                <button type="text" class="button-control" onclick="toshowsch()"> School</button>
+            </div>
+            <script>
+                
+            </script>
+            
+            <div id="Switchoncom" class="inside-form">
+                <div class="float-form">
+                <img src="zognuImag1.png" class="input-img">
+                <div></div>
+                <h4>Zognu Technologies</h4>
+                <p>12,424,475</p>
+                <button type="button" class="followbtn" id="followbtn" onclick="firstbutton()">Follow</button>
+            </div>
+            <script>
+                function firstbutton(){
+                    let btn1=document.getElementById("followbtn");
+                    if(btn1.innerHTML ==="Follow"){
+                        btn1.innerHTML = "Following"
+                    }
+                    else{
+                        btn1.innerHTML="Follow"
+                    }
+                }
+            </script>
+                <div class="float-form">
+                <img src="https://th.bing.com/th/id/OIP.I-01vn--3DvPN9RrnVKNoAAAAA?pid=ImgDet&rs=1" class="input-img">
+                <h4>Cognizant</h4>
+                <p>13,242,245</p>
+                <button type="button" class="followbtn" id="followbtn1" onclick="firstbutton1()">Follow</button>
+            </div>
+            <script>
+                function firstbutton1(){
+                    let btn1=document.getElementById("followbtn1");
+                    if(btn1.innerHTML ==="Follow"){
+                        btn1.innerHTML = "Following"
+                    }
+                    else{
+                        btn1.innerHTML="Follow"
+                    }
+                }
+            </script>
+                <div class="float-form">
+                <img src="https://logos-world.net/wp-content/uploads/2020/07/Accenture-Logo.png" class="input-img">
+                <h4>Accenture</h4>
+                
+                <p>11,437,331</p>
+                <button type="button" class="followbtn" id="followbtn2" onclick="firstbutton2()">Follow</button>
+            </div>
+            <script>
+                function firstbutton2(){
+                    let btn1=document.getElementById("followbtn2");
+                    if(btn1.innerHTML ==="Follow"){
+                        btn1.innerHTML = "Following"
+                    }
+                    else{
+                        btn1.innerHTML="Follow"
+                    }
+                }
+            </script>
+                <div id="Switchonsch">
+                <div  class="inside-form">
+                <div class="float-form">
+                <img src="https://edtimes.in/wp-content/uploads/2021/09/NxtWave-Logo-1068x712.png" class="input-img">
+                <h4>NxtWave</h4>
+                <p>12,424,475</p>
+                <button type="button" class="followbtn" id="followbtn3" onclick="firstbutton3()">Follow</button>
+            </div>
+            <script>
+                function firstbutton3(){
+                    let btn1=document.getElementById("followbtn3");
+                    if(btn1.innerHTML ==="Follow"){
+                        btn1.innerHTML = "Following"
+                    }
+                    else{
+                        btn1.innerHTML="Follow"
+                    }
+                }
+            </script>
+                <div class="float-form">
+                <img src="https://th.bing.com/th/id/R.82a5732f5bd5a8aa61f3037e2ec568a1?rik=B68818J%2byfuEhA&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2f4i9%2frGX%2f4i9rGX5iE.jpeg&ehk=qWGhVRnXMAcRypNVd5O24P3vmsfWq%2f6%2fJ8H9nTsC5vI%3d&risl=&pid=ImgRaw&r=0" class="input-img">
+                    <h4>DAV Public School</h4>
+                    <p>13,242,245</p>
+                    <button type="button" class="followbtn" id="followbtn4" onclick="firstbutton4()">Follow</button>
+                </div>
+                <script>
+                    function firstbutton4(){
+                        let btn1=document.getElementById("followbtn4");
+                        if(btn1.innerHTML ==="Follow"){
+                            btn1.innerHTML = "Following"
+                        }
+                        else{
+                            btn1.innerHTML="Follow"
+                        }
+                    }
+                </script>
+                <div class="float-form">
+                <img src="https://th.bing.com/th/id/R.6fba9fb0dbbb2420a2e75d2662bbba06?rik=BXzTndSogfMdKw&riu=http%3a%2f%2findianpublicschoolamanganj.com%2findex_image%2flogo.jpeg&ehk=yEEyEY7hrritDM0uDQKXDoQEY8NUO8jbQaEkli1OMxM%3d&risl=&pid=ImgRaw&r=0" class="input-img">
+                    <h4> Indian Public School</h4>
+                    <p>11,437,331</p>
+                    <button type="button" class="followbtn" id="followbtn5" onclick="firstbutton5()">Follow</button>
+                </div>
+                <script>
+                    function firstbutton5(){
+                        let btn1=document.getElementById("followbtn5");
+                        if(btn1.innerHTML ==="Follow"){
+                            btn1.innerHTML = "Following"
+                        }
+                        else{
+                            btn1.innerHTML="Follow"
+                        }
+                    }
+                </script></div>
+                <script>
+                    let x = document.getElementById("Switchoncom")
+                    let y = document.getElementById("Switchonsch")
+                    let z = document.getElementById("btn")
+                    function toshowsch(){
+                        x.style.visibility="hidden"
+                        y.style.visibility="visible"
+                        z.style.left="128px"
+                    }
+                    function toshowcom(){
+                        x.style.visibility="visible"
+                        y.style.visibility="hidden"
+                        z.style.left="0"
+                    }
+                </script>
+        </div>
+        </div>
+    </div> 
+</div>
+</div>
+</div>
+    </div>         
+</div>
+    
+        
+<div class="small-box">
+    <div class="small-inside">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16" style="float: right;padding-right: 15px;">
+        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+        </svg>
+        <h3>Profile language</h3>
+        <p>English</p>
+    <hr>
+        <div class="small-inside">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16" style="float: right;padding-right: 15px;">
+            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+            </svg>
+            <h3>Public profile  </h3>
+            <a href="part2.html">https://www.strive.com</a>
+        </div>
+    </div>
+
+<div class="small-box1">
+    <h4 style=" font-weight: bold; margin-left: 20px;">People also viewed</h4>
+            <div class="innerbox1" >
+                <img src="https://media.licdn.com/dms/image/D4E03AQFMcnYnN-v4Aw/profile-displayphoto-shrink_800_800/0/1672728398842?e=2147483647&v=beta&t=QC1khy-QVtn41Jp5_ICaUbbcaF4knNCPcimTZyOv_XU"  class="small-img"  > 
+                <div class="innerbox2">  
+                <p style="font-size: 13px; font-weight: 700;"> <a href="Mounikacompanytask.html" class="name">Mounika</a><br>
+                    Python Developer </p>
+                    <button id="firstbutton" onclick="connection()" class="connect">Connect</button>
+                </div>
+            </div>
+            <script>
+                function connection(){
+                let first=document.getElementById("firstbutton");
+                if(first.innerHTML ==="Connect"){
+                    first.innerHTML ="Connected"
+                }else{
+                    first.innerHTML="Connect"
+                }
+                }
+                </script>
+            <div class="innerbox1" >
+                <img src="https://visafoto.com/img/passport-photo-original7.jpg"  class="small-img"  > 
+                <div class="innerbox2">  
+                <p style="font-size: 13px; font-weight: 700;"> <span class="name">Arnav Singh</span><br>
+                    Student Of K.J.Somaiya College</p>
+                    <button id="secondbutton" onclick="connection2()" class="connect">Connect</button>
+                </div>
+            </div>
+            <script>
+                function connection2(){
+                let first=document.getElementById("secondbutton");
+                if(first.innerHTML ==="Connect"){
+                    first.innerHTML ="Pending"
+                    
+                }else{
+                    first.innerHTML="Connect"
+                }
+                }
+                </script>
+            <div class="innerbox1" >
+                <img src="https://i.pinimg.com/736x/48/35/b5/4835b5f9c52fd733eb26fb2c2b47bdc7.jpg"  class="small-img"  > 
+                <div class="innerbox2">  
+                <p style="font-size: 13px; font-weight: 700;"> <span class="name">Avanthika</span><br>
+                    FullStack Developer|NXT Wave</p>
+                    <button id="thirdbutton" onclick="connection3()" class="connect">Connect</button>
+                </div>
+            </div>
+            <script>
+                function connection3(){
+                let first=document.getElementById("thirdbutton");
+                if(first.innerHTML ==="Connect"){
+                    first.innerHTML ="Connected"
+                }else{
+                    first.innerHTML="Connect"
+                }
+                }
+                </script>
+            <div class="innerbox1" >
+                <img src="https://jamesgilberdphotography.weebly.com/uploads/1/3/6/5/13650410/emma-not-smiling-35x45_1_orig.jpg"  class="small-img"  > 
+                <div class="innerbox2">  
+                <p style="font-size: 13px; font-weight: 700;"> <span class="name">Lavanya</span><br>
+                    Civil Engineering</p>
+                    <button id="fourthbutton" onclick="connection4()" class="connect">Connect</button>
+                </div>
+            </div>
+            <script>
+                function connection4(){
+                let first=document.getElementById("fourthbutton");
+                if(first.innerHTML ==="Connect"){
+                    first.innerHTML ="Connected"
+                }else{
+                    first.innerHTML="Connect"
+                }
+                }
+                </script>
+</div> 
+<div>
+    <button class="showmore">Show more</button>
+    <div class="showmorebox">
+        <p class="People">People you may Know</p>
+        <p class="People1">From your school</p>
+        <div class="innerbox1" >
+            <img src="https://lawschoolpolicyreview.files.wordpress.com/2018/06/passport-size-photo-2-e1558013566564.jpg"  class="small-img"  > 
+            <div class="innerbox2">  
+            <p style="font-size: 13px; font-weight: 700;"> <span class="name">Karthik</span><br>
+                Software Engineering</p>
+                <button id="firstbutton1" onclick="connection5()" class="connect">Connect</button>
+            </div>
+        </div>
+        <script>
+            function connection5(){
+            let first=document.getElementById("firstbutton1");
+            if(first.innerHTML ==="Connect"){
+                first.innerHTML ="Connected"
+            }else{
+                first.innerHTML="Connect"
+            }
+            }
+            </script>
+        <div class="innerbox1" >
+            <img src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/passport/1-change1.jpg"  class="small-img"  > 
+            <div class="innerbox2">  
+            <p style="font-size: 13px; font-weight: 700;"> <span class="name">Akash</span><br>
+                Mechanical Engineers as a Automotive Design Trainees</p>
+                <button id="firstbutton2" onclick="connection6()" class="connect">Connect</button>
+            </div>
+        </div>
+        <script>
+            function connection6(){
+            let first=document.getElementById("firstbutton2");
+            if(first.innerHTML ==="Connect"){
+                first.innerHTML ="Connected"
+            }else{
+                first.innerHTML="Connect"
+            }
+            }
+            </script>
+        <div class="innerbox1" >
+            <img src="https://as2.ftcdn.net/v2/jpg/00/47/25/75/1000_F_47257542_wN7pkvDV1kusqd28VR3ZDF8UtpgMpJRb.jpg"  class="small-img"  > 
+            <div class="innerbox2">  
+            <p style="font-size: 13px; font-weight: 700;"> <span class="name">Akarsha</span><br>
+                Software Testing</p>
+                <button id="firstbutton3" onclick="connection7()" class="connect">Connect</button>
+            </div>
+        </div>
+        <script>
+            function connection7(){
+            let first=document.getElementById("firstbutton3");
+            if(first.innerHTML ==="Connect"){
+                first.innerHTML ="Connected"
+            }else{
+                first.innerHTML="Connect"
+            }
+            }
+            </script>
+        <div class="innerbox1" >
+            <img src="https://as2.ftcdn.net/v2/jpg/01/98/68/53/1000_F_198685380_UiiR2lCHgg7raR054Dv9v5cuOYdLCEdX.jpg"  class="small-img"  > 
+            <div class="innerbox2">  
+            <p style="font-size: 13px; font-weight: 700;"> <span class="name">Mamatha</span><br>
+                SAP ABAP Developer</p>
+                <button id="firstbutton4" onclick="connection8()" class="connect">Connect</button>
+            </div>
+        </div>
+        <script>
+            function connection8(){
+            let first=document.getElementById("firstbutton4");
+            if(first.innerHTML ==="Connect"){
+                first.innerHTML ="Pending"
+            }else{
+                first.innerHTML="Connect"
+            }
+            }
+            </script>
+        
+        <script>
+            let show=document.getElementById("more")
+
+            function Showmore1(){
+               show.classList.add("showitems")
+            }
+            function Showless(){
+                show.classList.remove("showitems")
+            }
+        </script>
+       
+    </div>
+    <img src="strive image.jpg" class="small-box2"/>
+      
+    </a>
+ </div>       
+</div> 
+<div class="container1" >
+    <div class="inside1" id="contactpage">
+        <div onclick="closecontact()" style="float: right; margin-top: 10px;margin-right: 2%; ">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-square-fill" viewBox="0 0 16 16">
+                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/>
+              </svg></div>
+          <h3>Ringston Reward</h3>
+        
+        <div class="contact">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-square" viewBox="0 0 16 16">
+                <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"/>
+                <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+              </svg><a style="font-size: 20px; font-weight: 600;"> Verify phone number</a>
+            <p >A phone number associated with this account has been verified. You can remove this verification at any time. Learn more about account verification.</p>
+        </div>
+        <div>
+        <h3>Contact Info</h3>
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+          </svg><a style="font-size: 20px; margin-left: 5px; font-weight: bold;">Email</a><br>
+          <p class="pover" href="#">ringstonreward@gmail.com</p><br>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
+            <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
+          </svg><a style="font-size: 20px; margin-left: 5px; font-weight: bold;">Phone Number</a><br>
+          <p class="pover" href="#">973XXXXX28</p><br>
+    </div></div>
+</div> 
+<script>
+let popup = document.getElementById("contactpage")
+
+function opencontact(){
+popup.classList.add("open-popup")
+}
+function closecontact(){
+popup.classList.remove("open-popup")
+}
+</script>
+<div class="boxcontainer" id="show">
+    <div onclick="Removemessage()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-octagon-fill" viewBox="0 0 16 16">
+            <path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zm-6.106 4.5L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/>
+          </svg>
+    </div>
+    <p>HighonM (High On Marketing) assists online entrepreneurs in reaching their goals faster by providing business mentorship programs that equip them with essential skills and training. Our programs cater to agency owners, freelancers, coaches, and consultants, enabling them to thrive in the online world.</p>
+</div>
+<script>
+let msg = document.getElementById("show");
+function showMessage(){
+    msg.classList.add("messageopen")
+}
+function Removemessage(){
+    msg.classList.remove("messageopen")
+}
+</script>
+
+<div class="openbox" id="open">
+    <div onclick="removeopen()" style="float: right;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-x-octagon-fill" viewBox="0 0 16 16">
+            <path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zm-6.106 4.5L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/>
+          </svg>
+    </div>
+    <p>Hiring</p>
+    <p>Share that you're hiring and attract qualified candidates</p>
+    <hr/>
+    <p>Providing services</p>
+        <p>Showcase services you offer so new clients can discover you</p>    
+</div> 
+<script>
+    let small = document.getElementById("open")
+    function openopen(){
+        small.classList.add("openblock")
+    }
+    function removeopen(){
+        small.classList.remove("openblock")
+    }
+</script>
+<div class="openbox1" id ="more">
+    <div onclick="removemore()" style="float: right;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-x-octagon-fill" viewBox="0 0 16 16">
+            <path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zm-6.106 4.5L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/>
+          </svg>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+      </svg><span style="font-size: 12px;">Share profile via message</span>
+    <hr/>
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M3.5 10a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 0 0 1h2A1.5 1.5 0 0 0 14 9.5v-8A1.5 1.5 0 0 0 12.5 0h-9A1.5 1.5 0 0 0 2 1.5v8A1.5 1.5 0 0 0 3.5 11h2a.5.5 0 0 0 0-1h-2z"/>
+        <path fill-rule="evenodd" d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"/>
+      </svg><span style="font-size: 12px; margin-left: 5px;">Save to PDF</span>
+      <hr/>
+      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-file-earmark" viewBox="0 0 16 16">
+        <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/>
+      </svg><span style="font-size: 12px; margin-left: 5px;">Bulid the resume</span>
+      <hr/>
+      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-info-square-fill" viewBox="0 0 16 16">
+        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+      </svg><span style="font-size: 12px; margin-left: 5px;">About this profile</span>
+</div>
+<script>
+    let moremore=document.getElementById("more")
+    function openmore(){
+        moremore.classList.add("openblock1")
+    }
+    function removemore(){
+        moremore.classList.remove("openblock1")
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <style>
+        body {
+  background-color: #EAEAEA;
+  font-family: Arial, sans-serif;
+}
+
+.form-container {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #FFF;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.5);
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  border-radius: 3px;
+  border: none;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #FFF;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3E8E41;
+}
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Login</h1>
+      <form onclick="return validateForm()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+
+        <input type="submit" value="Login">
+      </form>
+    </div>
+
+    <script>
+        function validateForm() {
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+
+  if (username == "") {
+    alert("Please enter your username.");
+    return false;
+  }
+
+  if (password == "") {
+    alert("Please enter your password.");
+    return false;
+  }
+}
+    </script>
+  </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Zognu software</title>
+    
+    <script>
+        function pageOpen(){
+            window.open("hari.html")
+        }
+        function contactPage(){
+            window.open("contactus.html")
+        }
+        function aboutPage(){
+            window.open("aboutus.html")
+        }
+        function servicesPage(){
+            window.open("services.html")
+        }
+        function carrerPage()
+        {
+            window.open("carrer.html")
+        }
+        function chatBot()
+        {
+            window.open("table.html")
+        }
+        function logIn()
+        {
+            window.open("login.html")
+        }
+        function registration()
+        {
+            window.open("registration.html")
+        }
+    
+    </script>
+    <style type="text/css">
+.main{
+    width: 100%;
+    background-color: white;
+    height: 500%;
+}
+.navbar {
+    width: 100%;
+    height: 100px;
+    
+
+}
+.icon {
+    width: 100px;
+    height: auto;
+    float: left;
+}
+.menu {
+    height: 70PX;
+    width: 400px;
+    display: flex;
+}
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li {
+    list-style: none;
+    margin-left: 80px;
+    margin-top: 30px;
+    font-size: 15px;
+}
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-family:  sans-serif;
+    font-weight: bolder;
+}
+ul li a:hover {
+ color: blue;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color:cadetblue; 
+    border: 0.5px solid #ccc; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.dropdown-menu li {
+    padding: 5px;
+}
+
+.dropdown-menu li:hover {
+    background-color:orange;
+}
+
+    button{
+        float: right; background-color:dodgerblue; font-size: 20px;
+        color: white; border-radius: 30px;border: 0px;width: 100px;height:40px ;margin-top: 2.5%;
+        
+    }
+    div{
+        background-color:whitesmoke;width: 99%;
+        height: 600px;
+    }
+   
+    
+    h1{
+        font-family: sans-serif;font-style: normal;font-size: 25px;
+    }
+    h1:hover{
+        background-color: lightblue;
+    }
+    p{
+        font-family:  Tahoma;color:darkgray;font-size: 20px;line-height: 35px; 
+    }
+    p:hover{
+        color:white;
+    }
+    a{
+        text-decoration: none; margin-right: 20px;color: darkslategray;
+    }    
+
+
+
+ 
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="navbar">
+                <div class="icon">
+                    <img src="804420c3-1ac2-4777-b0bc-07620fa268ae.jpg" width="220px" height="100px" align="left">
+                </div>
+                <ul id="menu">
+                    
+                        <li><a onclick="pageOpen()">HOMEPAGE</a></li>
+                        <li><a onclick="aboutPage()">ABOUT US</a></li>
+                        <li><a onclick="servicesPage()">SERVICES</a></li>
+                        <li class="dropdown">
+                            <a href="#">PROJECTS</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Automative</a></li>
+                                <li><a href="#">Banking </a></li>
+                                <li><a onclick="myown()" >Cloud </a></li>
+                                <li><a href="#">Devops </a></li>
+                                <li><a href="#">AI and machine learning </a></li>
+                              
+                            </ul>
+                        </li>
+                        
+                          <li><a onclick="carrerPage()">CAREER</a></li>
+                        <li><a onclick="contactPage()">CONTACT US</a></li>
+                        
+                    
+                </ul>
+            
+            
+           
+        
+    </header>
+    <div style= "background-image: url(https://images.pexels.com/photos/8832898/pexels-photo-8832898.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); background-size: cover;  width: 100%; height: 800px;">
+        <section style=" width: 48%; height: 70vh;  float: left;padding: 20px;margin-top: 2%; margin-left:45%;text-align:  center;">
+            <h1 style="color:blue; text-decoration: underline; font-style: italic; font-size: 34px;">Zognu Technologies Software company</h1>
+            <p style="padding: 15px; cursor: crosshair;">Zognu Technologies is a leading global professional services company  that helps the world’s leading businesses, governments and other organizations build their digital core, optimize their operations, accelerate revenue growth and enhance citizen services—creating tangible value at speed and scale.</p>
+            <button style=" float: left; width: 150px; margin-left: 80px;">To know more</button>
+        </section>
+    </div>
+    <button onclick="chatBot()">click</button>
+    <button onclick="logIn()">ok</button>
+    <button onclick="registration()">done</button>
+    
+    
+</body>
+</html>
